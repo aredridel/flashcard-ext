@@ -1,0 +1,19 @@
+{
+  "name": "Flashcard Printing",
+  "version": "1.0",
+  "manifest_version": 2,
+  "description": "A print view for FreezingBlue flashcards",
+  "browser_action": {
+    "default_icon": "icon.png"
+  },
+  "permissions": [
+    "http://www.freezingblue.com/iphone/flashcards/"
+  ],
+  "content_scripts": [
+    {
+      "matches": ["http://www.freezingblue.com/iphone/flashcards/*"],
+      "js": ["jquery.js", "flashcard.js"],
+      "run_at": "document_end"
+    }
+  ]
+}
