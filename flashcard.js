@@ -1,4 +1,5 @@
 (function() {
+    if (!/print/.test(document.location)) return;
 
     function go() {
         $('head').append("<style>"+

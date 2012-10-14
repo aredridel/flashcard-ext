@@ -4,7 +4,6 @@
   "manifest_version": 2,
   "description": "A print view for FreezingBlue flashcards",
   "browser_action": {
-    "default_icon": "icon.png"
   },
   "permissions": [
     "http://www.freezingblue.com/iphone/flashcards/"
